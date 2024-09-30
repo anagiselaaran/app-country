@@ -1,0 +1,15 @@
+<h2>Por pais</h2>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-search-box placeholder="Buscar por pais" [initialValue]="initialValue" (onDebounce)="searchByCountry($event)"></app-search-box>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>
+
+        <app-country-table [countries]="countries"></app-country-table>
+
+    </div>
+</div>
