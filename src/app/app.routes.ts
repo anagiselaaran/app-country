@@ -8,9 +8,9 @@ import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.com
 import { CountryPageComponent } from './pages/country-page/country-page.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomePageComponent },
+   /*  { path: 'home', component: HomePageComponent },
     { path: 'about', component: AboutPageComponent },
-    { path: 'contact', component: ContactPageComponent },
+    { path: 'contact', component: ContactPageComponent }, */
     {
         path: 'countries',children: [
             { path: 'by-capital', component: ByCapitalPageComponent },
@@ -20,8 +20,8 @@ export const routes: Routes = [
     ]},
     { path: '**', redirectTo: 'countries' }
     
-    
-
+    /* https://anagiselaaran.github.io/app-country/countries
+ */
 
 
     
